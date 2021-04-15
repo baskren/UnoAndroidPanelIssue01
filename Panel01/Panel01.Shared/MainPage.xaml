@@ -12,12 +12,21 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
             <Grid.Children>
                 <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
-                <local:TestPanel x:Name="testPanel" Grid.Row="1">
+                <local:TestPanel Grid.Row="1" Background="Pink">
                     <Button Content="BUTTON1" Margin="5" />
                     <Button Content="BUTTON2" Margin="5" />
+                    <Rectangle Fill="Green" Width="50" Height="40" Margin="5" />
+                    <TextBlock Text="PANEL 1" VerticalAlignment="Stretch"  Margin="5"  />
+                </local:TestPanel>
+                <local:TestPanel Grid.Row="2" Background="Yellow">
+                    <Button Content="BUTTON3" Margin="5" />
+                    <Button Content="BUTTON4" Margin="5" />
+                    <Rectangle Fill="Red" Width="50" Height="40" Margin="5" />
+                    <TextBlock Text="PANEL 2"  Margin="5"  />
                 </local:TestPanel>
             </Grid.Children>
         </Grid>
